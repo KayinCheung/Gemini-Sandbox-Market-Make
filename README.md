@@ -1,5 +1,7 @@
 # Gemini Sandbox Market Make
 
+These are python scripts for market making on Gemini's exchange. Built on Python 3.6.4.
+
 ## Getting started
 1) Create an account at Gemini's sandbox exchange: https://exchange.sandbox.gemini.com/
 2) Generate an API Key. Tick "trading" at API trading key settings during creation.
@@ -15,7 +17,9 @@
  6) Once timer reaches 5 seconds, cancel all open orders. Go back to step 1.
 
 
-## Adjustable variables
+## Suggestions to customize algorithm
+
 - The market making bid/ask can be offset by 0.5% (or any % number) for higher margin/probability and lower trade frequency
 - Amount of order book volume to accumulate can be increased. 
-- Volume of crypto to market make can be adjusted using live order book data (Currently set at 0.1 Eth)
+- Volume of crypto to market make can be adjusted using live order book data (Currently set at 0.1 Eth).
+- The algorithm can pull orderbook data from multiple exchanges, not just Gemini's live site.
