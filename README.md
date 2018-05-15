@@ -23,3 +23,9 @@ These are python scripts for market making on Gemini's exchange. Built on Python
 - Amount of order book volume to accumulate can be increased. 
 - Volume of crypto to market make can be adjusted using live order book data (Currently set at 0.1 Eth).
 - The algorithm can pull orderbook data from multiple exchanges, not just Gemini's live site.
+
+## Further development
+
+- Implement best price execution by supporting multiple exchanges, and executing orders the exchange with best rates
+- Implementing time-weighted average order execution
+- Combine time-weighted average order and best price execution. Eg: Spreading a $10 million BTC sell order across 30 minutes, executing an equal portion every 10 seconds on the exchange with best rates.
